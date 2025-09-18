@@ -26,7 +26,7 @@ function CreateToDoItems() {
   }
 
   if (todo.some(item => item.item === todoValue.value.trim())) {
-    setAlertMessage("This item already present in the list!");
+    setAlertMessage("Este item já está presente na lista!");
     return;
   }
 
@@ -45,7 +45,7 @@ function CreateToDoItems() {
   todo.push({ item: todoValue.value.trim(), status: false });
   setLocalStorage();
   todoValue.value = "";
-  setAlertMessage("Todo item Created Successfully!");
+  setAlertMessage("Item de tarefa criado com sucesso!");
 }
 
 function ReadToDoItems() {
@@ -81,7 +81,7 @@ function UpdateToDoItems(e) {
 
 function UpdateOnSelectionItems() {
   if (todo.some(item => item.item === todoValue.value.trim())) {
-    setAlertMessage("This item already present in the list!");
+    setAlertMessage("seu item já está presente na lista!");
     return;
   }
 
@@ -96,13 +96,13 @@ function UpdateOnSelectionItems() {
   addUpdate.setAttribute("onclick", "CreateToDoItems()");
   addUpdate.setAttribute("src", "/img/sinal-de-mais.png");
   todoValue.value = "";
-  setAlertMessage("Todo item Updated Successfully!");
+  setAlertMessage("Item de tarefa atualizado com sucesso!");
 }
 
 function DeleteToDoItems(e) {
   const li = e.closest("li");
   const value = li.querySelector("span").innerText.trim();
-  if (confirm(`Are you sure you want to delete "${value}"?`)) {
+  if (confirm(`Tem certeza de que deseja excluir "${value}"?`)) {
     li.classList.add("deleted-item");
     todo = todo.filter(item => item.item !== value);
     setLocalStorage();
@@ -127,6 +127,6 @@ function CompletedToDoItems(e) {
       if (item.item === span.innerText.trim()) item.status = true;
     });
     setLocalStorage();
-    setAlertMessage("Todo item Completed Successfully!");
+    setAlertMessage("Item de tarefa concluído com sucesso!");
   }
 }
