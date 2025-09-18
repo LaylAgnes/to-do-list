@@ -47,29 +47,26 @@ body {
 .todo-body {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: #edeef0;
-  border-radius: 30px;
-  padding-left: 20px;
-  margin-bottom: 25px;
+  width: 300px;         /* controla o tamanho da caixa */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  background: #fff;
 }
 
-.todo-body input {
-  flex: 1;
+.todo-input {
+  flex: 1;              /* ocupa o espaço restante */
   border: none;
   outline: none;
-  background: transparent;
-  padding: 15px 0;
-  font-size: 20px;
+  padding: 8px;
+  font-size: 16px;
 }
 
 .todo-body img {
+  width: 24px;          /* tamanho do ícone + */
+  height: 24px;
   cursor: pointer;
-  border-radius: 40px;
-  height: 55px;
-  width: 55px;
-  padding: 15px;
-  background: #005fa3;
+  margin-left: 8px;
 }
 
 ul {
