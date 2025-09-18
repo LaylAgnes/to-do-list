@@ -47,26 +47,29 @@ body {
 .todo-body {
   display: flex;
   align-items: center;
-  width: 300px;         /* controla o tamanho da caixa */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 5px;
-  background: #fff;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
 }
 
-.todo-input {
-  flex: 1;              /* ocupa o espaço restante */
+.todo-body input {
+  flex: 1;
   border: none;
   outline: none;
-  padding: 8px;
-  font-size: 16px;
+  background: transparent;
+  padding: 15px 0;
+  font-size: 20px;
 }
 
 .todo-body img {
-  width: 24px;          /* tamanho do ícone + */
-  height: 24px;
   cursor: pointer;
-  margin-left: 8px;
+  border-radius: 40px;
+  height: 55px;
+  width: 55px;
+  padding: 15px;
+  background: #005fa3;
 }
 
 ul {
@@ -164,17 +167,16 @@ li.deleted-item {
   }
 
   .todo-body {
-    padding-left: 10px;
+    padding-left: 15px;
   }
 
   .todo-body input {
     font-size: 16px;
-    padding-left: 10px;
   }
 
   .todo-body img {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     padding: 10px;
   }
 
