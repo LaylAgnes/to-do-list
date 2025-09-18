@@ -167,11 +167,12 @@ li.deleted-item {
   }
 
   .todo-body {
-    padding-left: 15px;
+    padding-left: 10px;
   }
 
   .todo-body input {
     font-size: 16px;
+    padding-left: 10px;
   }
 
   .todo-body img {
