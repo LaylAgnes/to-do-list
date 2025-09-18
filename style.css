@@ -195,9 +195,9 @@ li.deleted-item {
 }
 
 /* ------------------------ */
-/* Responsividade 300px     */
+/* Responsividade 450px     */
 /* ------------------------ */
-@media (max-width: 380px) {
+@media (max-width: 450px) {
   .container {
     padding: 10px;
     width: 98%;
